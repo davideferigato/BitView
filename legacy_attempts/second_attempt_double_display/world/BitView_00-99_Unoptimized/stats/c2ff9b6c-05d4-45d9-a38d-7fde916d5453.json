@@ -1,0 +1,70 @@
+{
+  "stats": {
+    "minecraft:killed": {
+      "minecraft:trader_llama": 4,
+      "minecraft:wandering_trader": 2
+    },
+    "minecraft:dropped": {
+      "minecraft:sandstone": 9,
+      "minecraft:redstone": 47,
+      "minecraft:repeater": 4,
+      "minecraft:lever": 2,
+      "minecraft:gray_concrete": 1
+    },
+    "minecraft:used": {
+      "minecraft:dark_oak_sign": 327,
+      "minecraft:red_wool": 1061,
+      "minecraft:repeater": 1403,
+      "minecraft:lever": 435,
+      "minecraft:light_blue_wool": 1129,
+      "minecraft:observer": 2,
+      "minecraft:sandstone_slab": 55,
+      "minecraft:redstone": 10450,
+      "minecraft:diamond_sword": 21,
+      "minecraft:white_dye": 4,
+      "minecraft:black_concrete": 1108,
+      "minecraft:redstone_lamp": 116,
+      "minecraft:water_bucket": 5,
+      "minecraft:light_gray_concrete": 164,
+      "minecraft:oak_sign": 52,
+      "minecraft:redstone_torch": 103,
+      "minecraft:coal_block": 391,
+      "minecraft:yellow_dye": 316,
+      "minecraft:potion": 10,
+      "minecraft:gray_concrete": 253,
+      "minecraft:sandstone": 11590,
+      "minecraft:obsidian": 28
+    },
+    "minecraft:custom": {
+      "minecraft:talked_to_villager": 2,
+      "minecraft:time_since_rest": 1460019,
+      "minecraft:walk_one_cm": 2211578,
+      "minecraft:leave_game": 44,
+      "minecraft:mob_kills": 6,
+      "minecraft:play_time": 1460019,
+      "minecraft:damage_dealt": 2310,
+      "minecraft:jump": 2964,
+      "minecraft:time_since_death": 1460019,
+      "minecraft:drop": 63,
+      "minecraft:sprint_one_cm": 438768,
+      "minecraft:total_world_time": 2076301,
+      "minecraft:fly_one_cm": 6109416,
+      "minecraft:walk_on_water_one_cm": 82,
+      "minecraft:crouch_one_cm": 46899,
+      "minecraft:sneak_time": 41866
+    },
+    "minecraft:picked_up": {
+      "minecraft:oak_sign": 25,
+      "minecraft:gray_concrete": 1,
+      "minecraft:lead": 4,
+      "minecraft:redstone_torch": 6,
+      "minecraft:lever": 193,
+      "minecraft:sandstone": 8,
+      "minecraft:leather": 2,
+      "minecraft:redstone": 2579,
+      "minecraft:repeater": 251,
+      "minecraft:dark_oak_sign": 128
+    }
+  },
+  "DataVersion": 4671
+}

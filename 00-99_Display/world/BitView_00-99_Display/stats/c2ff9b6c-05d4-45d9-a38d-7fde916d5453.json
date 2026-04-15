@@ -1,0 +1,81 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:talked_to_villager": 2,
+      "minecraft:time_since_rest": 36917,
+      "minecraft:walk_one_cm": 2378241,
+      "minecraft:leave_game": 35,
+      "minecraft:mob_kills": 9,
+      "minecraft:damage_taken": 500,
+      "minecraft:interact_with_lectern": 2,
+      "minecraft:play_time": 1187589,
+      "minecraft:damage_dealt": 2551,
+      "minecraft:jump": 2854,
+      "minecraft:time_since_death": 36884,
+      "minecraft:drop": 53,
+      "minecraft:sprint_one_cm": 236111,
+      "minecraft:fall_one_cm": 5387,
+      "minecraft:total_world_time": 2213419,
+      "minecraft:fly_one_cm": 5369543,
+      "minecraft:walk_on_water_one_cm": 110,
+      "minecraft:crouch_one_cm": 36546,
+      "minecraft:sneak_time": 34760,
+      "minecraft:deaths": 1
+    },
+    "minecraft:used": {
+      "minecraft:oak_shelf": 3,
+      "minecraft:repeater": 1363,
+      "minecraft:diamond_sword": 30,
+      "minecraft:white_dye": 4,
+      "minecraft:black_concrete": 227,
+      "minecraft:water_bucket": 10,
+      "minecraft:light_gray_concrete": 156,
+      "minecraft:writable_book": 6,
+      "minecraft:oak_sign": 51,
+      "minecraft:coal_block": 337,
+      "minecraft:yellow_dye": 87,
+      "minecraft:gray_concrete": 207,
+      "minecraft:written_book": 3,
+      "minecraft:obsidian": 27,
+      "minecraft:dark_oak_sign": 95,
+      "minecraft:red_wool": 2146,
+      "minecraft:lever": 75,
+      "minecraft:light_blue_wool": 909,
+      "minecraft:redstone_block": 13,
+      "minecraft:redstone": 9438,
+      "minecraft:redstone_lamp": 108,
+      "minecraft:lectern": 1,
+      "minecraft:redstone_torch": 189,
+      "minecraft:potion": 10,
+      "minecraft:lime_dye": 1,
+      "minecraft:sandstone": 10640
+    },
+    "minecraft:killed": {
+      "minecraft:trader_llama": 6,
+      "minecraft:wandering_trader": 3
+    },
+    "minecraft:picked_up": {
+      "minecraft:book": 1,
+      "minecraft:red_wool": 1,
+      "minecraft:redstone_torch": 60,
+      "minecraft:lever": 24,
+      "minecraft:leather": 3,
+      "minecraft:redstone": 3221,
+      "minecraft:repeater": 353,
+      "minecraft:oak_sign": 20,
+      "minecraft:lead": 6,
+      "minecraft:writable_book": 1,
+      "minecraft:oak_shelf": 4,
+      "minecraft:sandstone": 3,
+      "minecraft:yellow_dye": 1
+    },
+    "minecraft:dropped": {
+      "minecraft:red_wool": 1,
+      "minecraft:sandstone": 3,
+      "minecraft:redstone": 46,
+      "minecraft:repeater": 2,
+      "minecraft:yellow_dye": 1
+    }
+  },
+  "DataVersion": 4671
+}

@@ -1,0 +1,57 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:talked_to_villager": 1,
+      "minecraft:time_since_rest": 407059,
+      "minecraft:walk_one_cm": 675011,
+      "minecraft:leave_game": 10,
+      "minecraft:mob_kills": 3,
+      "minecraft:damage_dealt": 1340,
+      "minecraft:play_time": 407059,
+      "minecraft:jump": 650,
+      "minecraft:time_since_death": 407059,
+      "minecraft:drop": 49,
+      "minecraft:sprint_one_cm": 67368,
+      "minecraft:total_world_time": 473928,
+      "minecraft:fly_one_cm": 2317042,
+      "minecraft:walk_on_water_one_cm": 69,
+      "minecraft:crouch_one_cm": 3229,
+      "minecraft:sneak_time": 10274
+    },
+    "minecraft:used": {
+      "minecraft:repeater": 368,
+      "minecraft:lever": 51,
+      "minecraft:redstone": 2738,
+      "minecraft:diamond_sword": 10,
+      "minecraft:white_dye": 4,
+      "minecraft:redstone_lamp": 85,
+      "minecraft:water_bucket": 4,
+      "minecraft:oak_sign": 51,
+      "minecraft:redstone_torch": 54,
+      "minecraft:coal_block": 337,
+      "minecraft:potion": 10,
+      "minecraft:sandstone": 2668,
+      "minecraft:obsidian": 27
+    },
+    "minecraft:killed": {
+      "minecraft:trader_llama": 2,
+      "minecraft:wandering_trader": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:lead": 2,
+      "minecraft:oak_sign": 15,
+      "minecraft:redstone_torch": 4,
+      "minecraft:lever": 16,
+      "minecraft:sandstone": 2,
+      "minecraft:leather": 1,
+      "minecraft:redstone": 483,
+      "minecraft:repeater": 10
+    },
+    "minecraft:dropped": {
+      "minecraft:sandstone": 2,
+      "minecraft:redstone": 46,
+      "minecraft:repeater": 1
+    }
+  },
+  "DataVersion": 4671
+}
