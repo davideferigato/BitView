@@ -1,0 +1,17 @@
+# Minecraft world temporary files
+session.lock
+*.dat_old
+*/playerdata/*.dat_old
+*/stats/*.json
+*/*/playerdata/*.dat_old
+*/*/stats/*.json
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+*.swp
+*.swo
+*~
