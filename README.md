@@ -156,7 +156,7 @@ Minecraft redstone provides two basic logic components:
 - **Redstone dust** → OR gate (output ON if any input is ON).
 
 AND gates are simulated using De Morgan’s law:
-A̅B̅ = A̅ + B̅
+$$\bar{A}\bar{B} = \overline{\bar{A} + \bar{B}}$$
 
 All expressions in this project were converted to this NOT‑OR form. See [`circuit docs/AND to OR-NOT.md`](./00-99_Display/circuit%20docs/AND%20to%20OR-NOT.md) for a detailed explanation.
 
