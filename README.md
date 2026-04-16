@@ -3,7 +3,7 @@
 ![Minecraft Version](https://img.shields.io/badge/Minecraft-Java%20Edition%201.20.4-blue?logo=minecraft)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Release](https://img.shields.io/badge/Release-v1.0-orange)
-![Build Status](https://github.com/davideFerigato/BitView/actions/workflows/blank.yml/badge.svg)
+![Build Status](https://github.com/davideFerigato/BitView/actions/workflows/build.yml/badge.svg)
 
 
 **BitView** is a fully functional two‑digit decimal display built inside **Minecraft** using pure redstone logic.  
@@ -34,7 +34,7 @@ It demonstrates the practical application of **Boolean algebra**, **Karnaugh map
 - **Minecraft: Java Edition** (version 1.20.4 or newer, but 1.20+ should work)
 - No mods or datapacks required – pure vanilla.
 
-### How to Install the World
+## How to Install the World
 1. Download or clone this repository.
 2. Copy the folder `world/BitView_00-99_Display` into your Minecraft `saves` directory:
    - **Windows**: `%APPDATA%\.minecraft\saves`
@@ -61,7 +61,7 @@ The **keypad** consists of two **3×3 lever blocks** (digits 1–9), stacked ver
 3. **Zero** is the default state – to display 0 in a digit, leave **all levers in that block untouched**.
 4. Pull any combination to display a number from **00 to 99**.
 
-### Example:
+## Example:
 - To show **53**:  
   Pull lever `5` in the **upper** (tens) block.  
   Pull lever `3` in the **lower** (units) block.  
@@ -155,8 +155,8 @@ Minecraft redstone provides two basic logic components:
 - **Redstone torch** → NOT gate (output ON when input OFF).
 - **Redstone dust** → OR gate (output ON if any input is ON).
 
-AND gates are simulated using De Morgan’s law:  
-`A AND B = NOT( (NOT A) OR (NOT B) )`  
+AND gates are simulated using De Morgan’s law:
+`\bar{A}\bar{B} = \overline{\bar{A} + \bar{B}}`
 
 All expressions in this project were converted to this NOT‑OR form. See [`circuit docs/AND to OR-NOT.md`](./circuit%20docs/AND%20to%20OR-NOT.md) for a detailed explanation.
 
@@ -165,8 +165,8 @@ All expressions in this project were converted to this NOT‑OR form. See [`circ
 ## 📈 Project Evolution
 
 This repository also contains two earlier (unoptimized) versions for comparison:
-- **`first_attempt_single_display/`** – A single‑digit 0‑9 display with non‑minimized logic.
-- **`second_attempt_double_display/`** – A two‑digit 00‑99 display using the same unoptimized logic.
+- **`first_attempt_single_display`** – A single‑digit 0‑9 display with non‑minimized logic.
+- **`second_attempt_double_display`** – A two‑digit 00‑99 display using the same unoptimized logic.
 
 These show the iterative improvement process and the importance of Boolean minimization when working with redstone.
 
@@ -174,7 +174,7 @@ These show the iterative improvement process and the importance of Boolean minim
 
 ## 🔢 Hexadecimal Extension
 
-The folder **`hexadecimal_circuit/`** (inside `legacy_attempts/`) contains a complete theoretical design for a hexadecimal encoder (0‑9, A‑F). It includes truth tables, Karnaugh maps, minimized expressions, and circuit schematics. The design is fully worked out but was **not built in Minecraft** due to the excessive wiring complexity in 3D.
+The folder **`hexadecimal_circuit`** (inside `legacy_attempts`) contains a complete theoretical design for a hexadecimal encoder (0‑9, A‑F). It includes truth tables, Karnaugh maps, minimized expressions, and circuit schematics. The design is fully worked out but was **not built in Minecraft** due to the excessive wiring complexity in 3D.
 
 ---
 
