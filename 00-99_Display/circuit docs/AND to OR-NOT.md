@@ -4,16 +4,16 @@
 
 ---
 
-a = C + A + \bar{B}\bar{D} + B D --> A + C + \overline{B + D} + \overline{\bar{B} + \bar{D}}
+a = C + A + NOT(B)NOT(D) + B D --> A + C + NOT(B + D) + NOT(NOT(B) + NOT(D))
 
-b = A + B + \bar{C}\bar{D} --> A + B + \overline{C + D}
+b = A + B + NOT(C)NOT(D) --> A + B + NOT(C + D)
 
-c = \bar{B} + C D + \bar{C}\bar{D} --> \bar{B} + \overline{\bar{C} + \bar{D}} + \overline{C + D}
+c = NOT(B) + C D + NOT(C)NOT(D) --> NOT(B) + NOT(NOT(C) + NOT(D)) + NOT(C + D)
 
-d = A + \bar{B} C + B \bar{D} + B \bar{C} --> A + \overline{B + \bar{C}} + \overline{\bar{B} + D} + \overline{\bar{B} + C}
+d = A + NOT(B) C + B NOT(D) + B NOT(C) --> A + NOT(B + NOT(C)) + NOT(NOT(B) + D) + NOT(NOT(B) + C)
 
-e = \bar{B}\bar{D} + C\bar{D} --> \overline{B + D} + \overline{\bar{C} + D}
+e = NOT(B)NOT(D) + C NOT(D) --> NOT(B + D) + NOT(NOT(C) + D)
 
-f = \bar{C} + B + D --> \bar{C} + B + D
+f = NOT(C) + B + D --> NOT(C) + B + D
 
-g = A + \bar{B}\bar{D} + \bar{B}C + C\bar{D} + B\bar{C}D --> A + \overline{B + D} + \overline{B + \bar{C}} + \overline{\bar{C} + D} + \overline{\bar{B} + C + \bar{D}}
+g = A + NOT(B)NOT(D) + NOT(B)C + C NOT(D) + B NOT(C) D --> A + NOT(B + D) + NOT(B + NOT(C)) + NOT(NOT(C) + D) + NOT(NOT(B) + C + NOT(D))
