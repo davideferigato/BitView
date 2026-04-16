@@ -86,9 +86,9 @@ The **keypad** consists of two **3×3 lever blocks** (digits 1–9), stacked ver
 
 ## 🖼️ Gallery
 
-| Lever panel | Circuit layers | Display example: 51 |
+| Encoder part | Main circuit | Display example: 51 |
 |-------------|----------------|----------------------|
-| ![coder view](./00-99_Display/screenshots/coder%20view.png) | ![circuit view](./00-99_Display/screenshots/circuit%20view.png) | ![test 51](./00-99_Display/screenshots/test%2051.png) |
+| ![encoder view](./00-99_Display/screenshots/encoder%20view.png) | ![circuit view](./00-99_Display/screenshots/circuit%20view.png) | ![test 51](./00-99_Display/screenshots/test%2051.png) |
 
 | Display: 92 | Display: 99 | Full overview |
 |-------------|-------------|----------------|
@@ -101,7 +101,7 @@ More screenshots can be found in the [`screenshots/`](./00-99_Display/screenshot
 ## 🎥 Video Demo
 
 A short demonstration of the display in action:  
-[`record test.mp4`](./video/record%20test.mp4) *(download to watch)*
+[`record test.mp4`](./00-99_Display/video/record%20test.mp4) *(download to watch)*
 
 ---
 
@@ -119,9 +119,9 @@ BitView/
 │   ├── logic circuit.drawio
 │   ├── logic circuit.jpg
 │   └── AND to OR-NOT.md
-├── coder docs/                     # Schematics for the 1‑to‑9 encoder
-│   ├── coder1-9.drawio
-│   └── coder1-9.jpg
+├── encoder docs/                     # Schematics for the 1‑to‑9 encoder
+│   ├── encoder1-9.drawio
+│   └── encoder1-9.jpg
 ├── legacy_attempts/                # Earlier unoptimized versions
 │   ├── first_attempt_single_display/
 │   ├── second_attempt_double_display/
@@ -174,7 +174,7 @@ These show the iterative improvement process and the importance of Boolean minim
 
 ## 🔢 Hexadecimal Extension
 
-The folder **`hexadecimal_circuit/`** (inside `legacy_attempts/`) contains a complete theoretical design for a hexadecimal decoder (0‑9, A‑F). It includes truth tables, Karnaugh maps, minimized expressions, and circuit schematics. The design is fully worked out but was **not built in Minecraft** due to the excessive wiring complexity in 3D.
+The folder **`hexadecimal_circuit/`** (inside `legacy_attempts/`) contains a complete theoretical design for a hexadecimal encoder (0‑9, A‑F). It includes truth tables, Karnaugh maps, minimized expressions, and circuit schematics. The design is fully worked out but was **not built in Minecraft** due to the excessive wiring complexity in 3D.
 
 ---
 
