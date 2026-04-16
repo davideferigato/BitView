@@ -88,13 +88,13 @@ The **keypad** consists of two **3×3 lever blocks** (digits 1–9), stacked ver
 
 | Lever panel | Circuit layers | Display example: 51 |
 |-------------|----------------|----------------------|
-| ![coder view](./00-99_Display/screenshots/coder%20view.png) | ![circuit view](./screenshots/circuit%20view.png) | ![test 51](./screenshots/test%2051.png) |
+| ![coder view](./00-99_Display/screenshots/coder%20view.png) | ![circuit view](./00-99_Display/screenshots/circuit%20view.png) | ![test 51](./00-99_Display/screenshots/test%2051.png) |
 
 | Display: 92 | Display: 99 | Full overview |
 |-------------|-------------|----------------|
-| ![test 92](./screenshots/test%2092.png) | ![test 99](./screenshots/test%2099.png) | ![full view](./screenshots/full%20view.png) |
+| ![test 92](./00-99_Display/screenshots/test%2092.png) | ![test 99](./00-99_Display/screenshots/test%2099.png) | ![full view](./00-99_Display/screenshots/full%20view.png) |
 
-More screenshots can be found in the [`screenshots/`](./screenshots) folder.
+More screenshots can be found in the [`screenshots/`](./00-99_Display/screenshots) folder.
 
 ---
 
