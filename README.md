@@ -88,7 +88,7 @@ The **keypad** consists of two **3×3 lever blocks** (digits 1–9), stacked ver
 
 | Lever panel | Circuit layers | Display example: 51 |
 |-------------|----------------|----------------------|
-| ![coder view](./blob/main/00-99_Display/screenshots/coder%20view.png) | ![circuit view](./screenshots/circuit%20view.png) | ![test 51](./screenshots/test%2051.png) |
+| ![coder view](./00-99_Display/screenshots/coder%20view.png) | ![circuit view](./screenshots/circuit%20view.png) | ![test 51](./screenshots/test%2051.png) |
 
 | Display: 92 | Display: 99 | Full overview |
 |-------------|-------------|----------------|
