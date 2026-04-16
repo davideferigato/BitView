@@ -42,12 +42,34 @@ It demonstrates the practical application of **Boolean algebra**, **Karnaugh map
    - **Linux**: `~/.minecraft/saves`
 3. Launch Minecraft, select the world **BitView – 00-99 Display**, and enter.
 
-### How to Use the Display
-- **Left row** of levers → tens digit (1–9).  
-- **Right row** of levers → units digit (1–9).  
-- **Zero** is the default state (no lever pulled).  
-- To show **0** in a digit, simply leave all levers in that row untouched.  
-- Pull any combination to display a number from 00 to 99.
+## How to Use the Display
+
+The physical structure is organised in **vertical layers**:
+- **Bottom layer** → units digit circuit
+- **Layer above** → tens digit circuit
+- (Higher layers could be added for hundreds, thousands, etc.)
+
+The **displays** are placed **side by side** (tens on the left, units on the right) to form a normal two‑digit number.
+
+The **keypad** consists of two **3×3 lever blocks** (digits 1–9), stacked vertically:
+- **Bottom 3×3 block** → selects the **units** digit (1–9)
+- **Upper 3×3 block** → selects the **tens** digit (1–9)
+
+### How to compose a number:
+1. **Tens digit** – pull any lever in the **upper** 3×3 block (1–9).
+2. **Units digit** – pull any lever in the **lower** 3×3 block (1–9).
+3. **Zero** is the default state – to display 0 in a digit, leave **all levers in that block untouched**.
+4. Pull any combination to display a number from **00 to 99**.
+
+### Example:
+- To show **53**:  
+  Pull lever `5` in the **upper** (tens) block.  
+  Pull lever `3` in the **lower** (units) block.  
+  The left display shows `5`, the right display shows `3`.
+
+- To show **7** (as `07`):  
+  Pull lever `7` in the **lower** (units) block.  
+  Leave the **upper** (tens) block untouched → left display shows `0`.
 
 ---
 
@@ -66,7 +88,7 @@ It demonstrates the practical application of **Boolean algebra**, **Karnaugh map
 
 | Lever panel | Circuit layers | Display example: 51 |
 |-------------|----------------|----------------------|
-| ![coder view](./screenshots/coder%20view.png) | ![circuit view](./screenshots/circuit%20view.png) | ![test 51](./screenshots/test%2051.png) |
+| ![coder view](./blob/main/00-99_Display/screenshots/coder%20view.png) | ![circuit view](./screenshots/circuit%20view.png) | ![test 51](./screenshots/test%2051.png) |
 
 | Display: 92 | Display: 99 | Full overview |
 |-------------|-------------|----------------|
