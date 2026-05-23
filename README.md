@@ -1,4 +1,4 @@
-# BitView – 00-99 Redstone Display in Minecraft
+# BitView
 
 ![Minecraft Version](https://img.shields.io/badge/Minecraft-Java%20Edition%201.20.4-blue?logo=minecraft)
 ![License](https://img.shields.io/badge/License-MIT-green)
