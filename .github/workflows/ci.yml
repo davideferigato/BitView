@@ -20,10 +20,6 @@ jobs:
             exit 1
           fi
 
-      - name: Debug - list circuit docs folder
-        run: |
-          ls -la "00-99_Display/circuit docs/"
-
       - name: Debug list files
         run: |
           pwd
@@ -64,8 +60,13 @@ jobs:
 
       - name: Check region files (warnings only)
         run: |
-          for file in 00-99_Display/world/BitView_00-99_Display/region/*.mca; do
-            if [ ! -s "$file" ]; then
-              echo "⚠️ Warning: $file is empty (may be fine)"
-            fi
-          done
+          files=(00-99_Display/world/BitView_00-99_Display/region/*.mca)
+          if [ "${files[0]}" = "00-99_Display/world/BitView_00-99_Display/region/*.mca" ]; then
+            echo "⚠️ No .mca files found in region folder"
+          else
+            for file in "${files[@]}"; do
+              if [ ! -s "$file" ]; then
+                echo "⚠️ Warning: $file is empty (may be fine)"
+              fi
+            done
+          fi
