@@ -11,9 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Basic test
-        run: echo "CI pipeline started"
-      
       - name: Check level.dat exists
         run: |
           if [ -f "00-99_Display/world/BitView_00-99_Display/level.dat" ]; then
@@ -22,3 +19,22 @@ jobs:
             echo "❌ level.dat not found"
             exit 1
           fi
+
+
+
+      - name: Check AND to OR-NOT.md exists
+        run: |
+          if [ -f "00-99_Display/circuit docs/AND to OR-NOT.md" ]; then
+            echo "✅ Documentation found"
+          else
+            echo "❌ Documentation missing"
+            exit 1
+          fi
+
+      - name: Check region files (warnings only)
+        run: |
+          for file in 00-99_Display/world/BitView_00-99_Display/region/*.mca; do
+            if [ ! -s "$file" ]; then
+              echo "⚠️ Warning: $file is empty (may be fine)"
+            fi
+          done
