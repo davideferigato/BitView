@@ -1,0 +1,30 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Zip the Minecraft world folder
+        run: |
+          zip -r BitView_00-99_Display.zip "00-99_Display/world/BitView_00-99_Display"
+
+      - name: Create Release and upload asset
+        uses: softprops/action-gh-release@v1
+        with:
+          files: BitView_00-99_Display.zip
+          tag_name: ${{ github.ref_name }}
+          name: Release ${{ github.ref_name }}
+          body: |
+            This release contains the fully functional Minecraft world for BitView 00-99 Display.
+            See CHANGELOG.md for details.
+          draft: false
+          prerelease: false

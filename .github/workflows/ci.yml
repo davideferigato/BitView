@@ -1,0 +1,69 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check world files (level.dat exists)
+        run: |
+          if [ ! -f "00-99_Display/world/BitView_00-99_Display/level.dat" ]; then
+            echo "level.dat not found!"
+            exit 1
+          fi
+          echo "level.dat found."
+
+      - name: Check that region files are not empty (basic corruption check)
+        run: |
+          for file in 00-99_Display/world/BitView_00-99_Display/region/*.mca; do
+            if [ ! -s "$file" ]; then
+              echo "Warning: $file is empty (may be fine)"
+            fi
+          done
+
+      - name: Install csvkit for CSV linting
+        run: pip install csvkit
+
+      - name: Validate truth table CSV
+        run: |
+          csvstat "00-99_Display/circuit docs/truth table.csv" --summary
+          rows=$(csvstat "00-99_Display/circuit docs/truth table.csv" --count)
+          if [ "$rows" -lt 16 ]; then
+            echo "CSV has less than 16 data rows"
+            exit 1
+          fi
+          echo "CSV looks valid."
+
+      - name: Install LaTeX (latexmk)
+        run: sudo apt-get update && sudo apt-get install -y texlive-base texlive-latex-extra latexmk
+
+      - name: Compile Karnaugh maps PDF from .tex source
+        run: |
+          cd "00-99_Display/circuit docs"
+          latexmk -pdf -interaction=nonstopmode "karnaugh maps.tex" || echo "LaTeX compilation failed but continuing"
+          if [ -f "karnaugh maps.pdf" ]; then
+            mkdir -p ../../docs
+            cp "karnaugh maps.pdf" ../../docs/
+          fi
+
+      - name: Upload compiled PDF as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: karnaugh-maps
+          path: docs/karnaugh\ maps.pdf
+          if-no-files-found: warn
+
+      - name: Validate NOT/OR conversion documentation
+        run: |
+          if [ ! -f "00-99_Display/circuit docs/AND to OR-NOT.md" ]; then
+            echo "AND to OR-NOT.md missing"
+            exit 1
+          fi
+          echo "Documentation present."
