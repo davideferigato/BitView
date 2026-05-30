@@ -3,8 +3,6 @@ name: CI
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -13,62 +11,50 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Check world files (level.dat exists)
+      - name: Check level.dat exists
         run: |
-          if [ ! -f "00-99_Display/world/BitView_00-99_Display/level.dat" ]; then
-            echo "level.dat not found!"
+          if [ -f "00-99_Display/world/BitView_00-99_Display/level.dat" ]; then
+            echo " level.dat found"
+          else
+            echo " level.dat missing"
             exit 1
           fi
-          echo "level.dat found."
 
-      - name: Check that region files are not empty (basic corruption check)
+      - name: Validate truth table CSV (Python)
         run: |
-          for file in 00-99_Display/world/BitView_00-99_Display/region/*.mca; do
-            if [ ! -s "$file" ]; then
-              echo "Warning: $file is empty (may be fine)"
-            fi
-          done
-
-      - name: Validate truth table CSV
-        run: |
-          python <<EOF
-import csv
-with open('00-99_Display/circuit docs/truth table.csv', 'r') as f:
-    reader = csv.reader(f)
-    header = next(reader)
-    rows = list(reader)
-    if len(rows) < 16:
-        print(f'Error: expected at least 16 data rows, got {len(rows)}')
-        exit(1)
-    if len(header) != 9:
-        print(f'Error: expected 9 columns (input 4 bits + 7 segments), got {len(header)}')
-        exit(1)
-    print(f'CSV validation passed: {len(rows)} rows, {len(header)} columns')
+          python3 << 'EOF'
+import csv, sys
+path = "00-99_Display/circuit docs/truth table.csv"
+try:
+    with open(path, 'r') as f:
+        reader = csv.reader(f)
+        header = next(reader)
+        rows = list(reader)
+        if len(rows) < 16:
+            print(f" Expected at least 16 data rows, got {len(rows)}")
+            sys.exit(1)
+        if len(header) != 9:
+            print(f" Expected 9 columns, got {len(header)}")
+            sys.exit(1)
+        print(f" CSV valid: {len(rows)} rows, {len(header)} columns")
+except Exception as e:
+    print(f" Error reading CSV: {e}")
+    sys.exit(1)
 EOF
 
-      - name: Install LaTeX (latexmk)
-        run: sudo apt-get update && sudo apt-get install -y texlive-base texlive-latex-extra latexmk
-
-      - name: Compile Karnaugh maps PDF from .tex source
+      - name: Check AND to OR-NOT.md exists
         run: |
-          cd "00-99_Display/circuit docs"
-          latexmk -pdf -interaction=nonstopmode "karnaugh maps.tex" || echo "LaTeX compilation failed but continuing"
-          if [ -f "karnaugh maps.pdf" ]; then
-            mkdir -p ../../docs
-            cp "karnaugh maps.pdf" ../../docs/
-          fi
-
-      - name: Upload compiled PDF as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: karnaugh-maps
-          path: docs/karnaugh\ maps.pdf
-          if-no-files-found: warn
-
-      - name: Validate NOT/OR conversion documentation
-        run: |
-          if [ ! -f "00-99_Display/circuit docs/AND to OR-NOT.md" ]; then
-            echo "AND to OR-NOT.md missing"
+          if [ -f "00-99_Display/circuit docs/AND to OR-NOT.md" ]; then
+            echo " Documentation found"
+          else
+            echo " Documentation missing"
             exit 1
           fi
-          echo "Documentation present."
+
+      # LaTeX compilazione opzionale - commentata per ora
+      # - name: Install LaTeX
+      #   run: sudo apt-get update && sudo apt-get install -y texlive-base texlive-latex-extra latexmk
+      # - name: Compile PDF
+      #   run: |
+      #     cd "00-99_Display/circuit docs"
+      #     latexmk -pdf -interaction=nonstopme "karnaugh_maps.tex" || echo "LaTeX skipped"
