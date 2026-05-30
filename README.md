@@ -20,7 +20,6 @@ It demonstrates the practical application of **Boolean algebra**, **Karnaugh map
 
 - [Getting Started](#-getting-started)
 - [Key Features](#-key-features)
-- [Academic Context](#-academic-context)
 - [Gallery](#-gallery)
 - [Video Demo](#-video-demo)
 - [Repository Structure](#-repository-structure)
@@ -29,7 +28,6 @@ It demonstrates the practical application of **Boolean algebra**, **Karnaugh map
 - [Why Only NOT and OR?](#-why-only-not-and-or)
 - [Project Evolution](#-project-evolution)
 - [Hexadecimal Extension](#-hexadecimal-extension)
-- [Why This Project Matters](#-why-this-project-matters-for-a-masters-portfolio)
 - [Legacy Attempts vs Final](#-legacy-attempts-vs-final-optimised)
 - [Credits](#-credits)
 - [License](#-license)
