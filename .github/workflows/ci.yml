@@ -13,3 +13,12 @@ jobs:
 
       - name: Basic test
         run: echo "CI pipeline started"
+      
+      - name: Check level.dat exists
+        run: |
+          if [ -f "00-99_Display/world/BitView_00-99_Display/level.dat" ]; then
+            echo "✅ level.dat found"
+          else
+            echo "❌ level.dat not found"
+            exit 1
+          fi
