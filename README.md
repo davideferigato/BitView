@@ -12,7 +12,7 @@ It demonstrates the practical application of **Boolean algebra**, **Karnaugh map
 
 ## 📄 Abstract
 
-**BitView** presents a two‑digit decimal display (00–99) implemented in Minecraft redstone as a case study in combinational logic design. Using truth tables, Karnaugh maps, and Boolean minimization, the circuit reduces gate count by approximately `[TODO: % reduction]` compared to an unoptimized baseline. The design uses only NOT and OR gates (the only primitives available in redstone) via De Morgan transformations. This work demonstrates the practical application of digital logic concepts covered in `[TODO: Course name]` and highlights the constraints of hardware implementation in a non‑standard environment.
+**BitView** presents a two‑digit decimal display (00–99) implemented in Minecraft redstone as a case study in combinational logic design. Using truth tables, Karnaugh maps, and Boolean minimization, the circuit reduces gate count by approximately `[TODO: % reduction]` compared to an unoptimized baseline. The design uses only NOT and OR gates (the only primitives available in redstone) via De Morgan transformations.
 
 ---
 
@@ -89,18 +89,6 @@ The **keypad** consists of two **3×3 lever blocks** (digits 1–9), stacked ver
 - Logic implemented using **only NOT and OR gates** (the only reliable gates in redstone) via De Morgan transformations.
 - The entire circuit is **stacked vertically** to keep the world compact and readable.
 - Fully documented with truth tables, K‑maps, logic diagrams, and conversion to NOT/OR.
-
----
-
-## 🎓 Academic Context
-
-This project was developed as part of `[TODO: Course name]` (Digital Logic Design / Computer Architecture). It directly applies the following theoretical concepts:
-- Boolean algebra and truth tables
-- Karnaugh maps (4 variables) for minimization
-- De Morgan’s laws to convert AND/OR logic to NOT/OR only
-- Combinational circuit design and optimisation
-
-The repository also serves as a portfolio piece for master’s programme applications, demonstrating both theoretical understanding and practical implementation in a constrained environment (Minecraft redstone).
 
 ---
 
@@ -210,19 +198,6 @@ These show the iterative improvement process and the importance of Boolean minim
 ## 🔢 Hexadecimal Extension
 
 The folder **`hexadecimal_circuit`** (inside `legacy_attempts`) contains a complete theoretical design for a hexadecimal encoder (0‑9, A‑F). It includes truth tables, Karnaugh maps, minimized expressions, and circuit schematics. The design is fully worked out but was **not built in Minecraft** due to the excessive wiring complexity in 3D.
-
----
-
-## 🚀 Why This Project Matters for a Master’s Portfolio
-
-This project goes beyond a typical Minecraft redstone build. It demonstrates:
-- **Rigorous engineering process** – from truth tables to minimised equations to physical implementation.
-- **Quantitative improvement** – showing optimisation with hard metrics.
-- **Hardware constraints awareness** – adapting logic to NOT/OR only, handling default‑on torches.
-- **Complete documentation** – including legacy attempts, theoretical extensions, and reproducible steps.
-- **Interdisciplinary thinking** – combining digital logic, computer architecture, and creative problem solving.
-
-For admission committees and technical recruiters, this project signals the ability to **design, document, and iterate** on a non‑trivial system under real‑world constraints. The same methodology applies to FPGA design, embedded systems, and any resource‑limited digital circuit development.
 
 ---
 
