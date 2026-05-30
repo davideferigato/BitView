@@ -31,7 +31,7 @@ jobs:
 
       - name: Validate truth table CSV
         run: |
-          python -c "
+          python <<EOF
 import csv
 with open('00-99_Display/circuit docs/truth table.csv', 'r') as f:
     reader = csv.reader(f)
@@ -44,7 +44,7 @@ with open('00-99_Display/circuit docs/truth table.csv', 'r') as f:
         print(f'Error: expected 9 columns (input 4 bits + 7 segments), got {len(header)}')
         exit(1)
     print(f'CSV validation passed: {len(rows)} rows, {len(header)} columns')
-"
+EOF
 
       - name: Install LaTeX (latexmk)
         run: sudo apt-get update && sudo apt-get install -y texlive-base texlive-latex-extra latexmk
