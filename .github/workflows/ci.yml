@@ -1,11 +1,11 @@
 name: CI
 
 on:
-  workflow_dispatch:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   validate:
@@ -29,7 +29,6 @@ jobs:
             fi
           done
 
-
       - name: Validate truth table CSV
         run: |
           python -c "
@@ -46,13 +45,6 @@ with open('00-99_Display/circuit docs/truth table.csv', 'r') as f:
         exit(1)
     print(f'CSV validation passed: {len(rows)} rows, {len(header)} columns')
 "
-
-          rows=$(csvstat "00-99_Display/circuit docs/truth table.csv" --count)
-          if [ "$rows" -lt 16 ]; then
-            echo "CSV has less than 16 data rows"
-            exit 1
-          fi
-          echo "CSV looks valid."
 
       - name: Install LaTeX (latexmk)
         run: sudo apt-get update && sudo apt-get install -y texlive-base texlive-latex-extra latexmk
