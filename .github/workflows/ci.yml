@@ -20,6 +20,10 @@ jobs:
             exit 1
           fi
 
+      - name: Debug - list circuit docs folder
+        run: |
+          ls -la "00-99_Display/circuit docs/"
+
       - name: Validate truth table CSV
         run: |
           python3 << 'EOF'
