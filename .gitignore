@@ -1,0 +1,22 @@
+# Minecraft world temporary files
+*.lock
+*.dat_old
+*/playerdata/*.dat_old
+*/stats/*.json
+*/*/playerdata/*.dat_old
+*/*/stats/*.json
+session.lock
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor backups
+*.swp
+*.swo
+*~
+
+# Python (if you add scripts later)
+__pycache__/
+*.pyc

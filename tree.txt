@@ -1,0 +1,314 @@
+.
+├── .github
+│   ├── workflows
+│   │   └── build.yml
+│   └── .DS_Store
+├── 00-99_Display
+│   ├── circuit docs
+│   │   ├── AND to OR-NOT.md
+│   │   ├── karnaugh maps.pdf
+│   │   ├── karnaugh maps.tex
+│   │   ├── logic circuit.drawio
+│   │   ├── logic circuit.jpg
+│   │   └── truth table.csv
+│   ├── encoder docs
+│   │   ├── encoder1-9.drawio
+│   │   └── encoder1-9.jpg
+│   ├── screenshots
+│   │   ├── circuit view.png
+│   │   ├── encoder view.png
+│   │   ├── full view.png
+│   │   ├── test 51.png
+│   │   ├── test 92.png
+│   │   └── test 99.png
+│   ├── video
+│   │   └── record test.mp4
+│   ├── world
+│   │   └── BitView_00-99_Display
+│   │       ├── advancements
+│   │       │   └── c2ff9b6c-05d4-45d9-a38d-7fde916d5453.json
+│   │       ├── data
+│   │       │   ├── chunks.dat
+│   │       │   ├── Mansion_index.dat
+│   │       │   ├── Mineshaft_index.dat
+│   │       │   ├── Monument_index.dat
+│   │       │   ├── raids.dat
+│   │       │   ├── random_sequences.dat
+│   │       │   ├── scoreboard.dat
+│   │       │   ├── stopwatches.dat
+│   │       │   ├── Stronghold_index.dat
+│   │       │   ├── Temple_index.dat
+│   │       │   ├── Village_index.dat
+│   │       │   └── world_border.dat
+│   │       ├── DIM-1
+│   │       │   └── data
+│   │       │       ├── chunks.dat
+│   │       │       ├── raids.dat
+│   │       │       └── world_border.dat
+│   │       ├── DIM1
+│   │       │   └── data
+│   │       │       ├── chunks.dat
+│   │       │       ├── raids_end.dat
+│   │       │       └── world_border.dat
+│   │       ├── entities
+│   │       │   ├── r.-1.-1.mca
+│   │       │   ├── r.-1.-2.mca
+│   │       │   ├── r.-1.0.mca
+│   │       │   ├── r.-2.-1.mca
+│   │       │   ├── r.-2.-2.mca
+│   │       │   ├── r.-2.0.mca
+│   │       │   ├── r.0.-1.mca
+│   │       │   ├── r.0.-2.mca
+│   │       │   └── r.0.0.mca
+│   │       ├── playerdata
+│   │       │   ├── c2ff9b6c-05d4-45d9-a38d-7fde916d5453.dat
+│   │       │   └── c2ff9b6c-05d4-45d9-a38d-7fde916d5453.dat_old
+│   │       ├── poi
+│   │       │   ├── r.-1.-1.mca
+│   │       │   ├── r.-1.-2.mca
+│   │       │   ├── r.-1.0.mca
+│   │       │   ├── r.-1.1.mca
+│   │       │   ├── r.-2.-1.mca
+│   │       │   ├── r.-2.-2.mca
+│   │       │   ├── r.-2.0.mca
+│   │       │   ├── r.-2.1.mca
+│   │       │   ├── r.0.-1.mca
+│   │       │   ├── r.0.-2.mca
+│   │       │   ├── r.0.0.mca
+│   │       │   ├── r.0.1.mca
+│   │       │   ├── r.1.-1.mca
+│   │       │   ├── r.1.-2.mca
+│   │       │   ├── r.1.0.mca
+│   │       │   └── r.1.1.mca
+│   │       ├── region
+│   │       │   ├── r.-1.-1.mca
+│   │       │   ├── r.-1.-2.mca
+│   │       │   ├── r.-1.0.mca
+│   │       │   ├── r.-1.1.mca
+│   │       │   ├── r.-2.-1.mca
+│   │       │   ├── r.-2.-2.mca
+│   │       │   ├── r.-2.0.mca
+│   │       │   ├── r.-2.1.mca
+│   │       │   ├── r.0.-1.mca
+│   │       │   ├── r.0.-2.mca
+│   │       │   ├── r.0.0.mca
+│   │       │   ├── r.0.1.mca
+│   │       │   ├── r.1.-1.mca
+│   │       │   ├── r.1.-2.mca
+│   │       │   ├── r.1.0.mca
+│   │       │   └── r.1.1.mca
+│   │       ├── stats
+│   │       │   └── c2ff9b6c-05d4-45d9-a38d-7fde916d5453.json
+│   │       ├── icon.png
+│   │       ├── level.dat
+│   │       ├── level.dat_old
+│   │       └── session.lock
+│   └── .DS_Store
+├── docs
+├── legacy_attempts
+│   ├── first_attempt_single_display
+│   │   ├── circuit docs
+│   │   │   ├── first k-maps.pdf
+│   │   │   └── wrong optimized logic circuit.jpg
+│   │   ├── world
+│   │   │   ├── BitView_0-9_Unoptimized
+│   │   │   │   ├── advancements
+│   │   │   │   │   └── c2ff9b6c-05d4-45d9-a38d-7fde916d5453.json
+│   │   │   │   ├── data
+│   │   │   │   │   ├── chunks.dat
+│   │   │   │   │   ├── Mansion_index.dat
+│   │   │   │   │   ├── Mineshaft_index.dat
+│   │   │   │   │   ├── Monument_index.dat
+│   │   │   │   │   ├── raids.dat
+│   │   │   │   │   ├── random_sequences.dat
+│   │   │   │   │   ├── scoreboard.dat
+│   │   │   │   │   ├── stopwatches.dat
+│   │   │   │   │   ├── Stronghold_index.dat
+│   │   │   │   │   ├── Temple_index.dat
+│   │   │   │   │   ├── Village_index.dat
+│   │   │   │   │   └── world_border.dat
+│   │   │   │   ├── DIM-1
+│   │   │   │   │   └── data
+│   │   │   │   │       ├── chunks.dat
+│   │   │   │   │       ├── raids.dat
+│   │   │   │   │       └── world_border.dat
+│   │   │   │   ├── DIM1
+│   │   │   │   │   └── data
+│   │   │   │   │       ├── chunks.dat
+│   │   │   │   │       ├── raids_end.dat
+│   │   │   │   │       └── world_border.dat
+│   │   │   │   ├── entities
+│   │   │   │   │   ├── r.-1.-1.mca
+│   │   │   │   │   ├── r.-1.-2.mca
+│   │   │   │   │   ├── r.-1.0.mca
+│   │   │   │   │   ├── r.-2.-1.mca
+│   │   │   │   │   ├── r.-2.-2.mca
+│   │   │   │   │   ├── r.-2.0.mca
+│   │   │   │   │   ├── r.0.-1.mca
+│   │   │   │   │   ├── r.0.-2.mca
+│   │   │   │   │   └── r.0.0.mca
+│   │   │   │   ├── playerdata
+│   │   │   │   │   ├── c2ff9b6c-05d4-45d9-a38d-7fde916d5453.dat
+│   │   │   │   │   └── c2ff9b6c-05d4-45d9-a38d-7fde916d5453.dat_old
+│   │   │   │   ├── poi
+│   │   │   │   │   ├── r.-1.-1.mca
+│   │   │   │   │   ├── r.-1.-2.mca
+│   │   │   │   │   ├── r.-1.0.mca
+│   │   │   │   │   ├── r.-1.1.mca
+│   │   │   │   │   ├── r.-2.-1.mca
+│   │   │   │   │   ├── r.-2.-2.mca
+│   │   │   │   │   ├── r.-2.0.mca
+│   │   │   │   │   ├── r.-2.1.mca
+│   │   │   │   │   ├── r.0.-1.mca
+│   │   │   │   │   ├── r.0.-2.mca
+│   │   │   │   │   ├── r.0.0.mca
+│   │   │   │   │   ├── r.0.1.mca
+│   │   │   │   │   ├── r.1.-1.mca
+│   │   │   │   │   ├── r.1.-2.mca
+│   │   │   │   │   ├── r.1.0.mca
+│   │   │   │   │   └── r.1.1.mca
+│   │   │   │   ├── region
+│   │   │   │   │   ├── r.-1.-1.mca
+│   │   │   │   │   ├── r.-1.-2.mca
+│   │   │   │   │   ├── r.-1.0.mca
+│   │   │   │   │   ├── r.-1.1.mca
+│   │   │   │   │   ├── r.-2.-1.mca
+│   │   │   │   │   ├── r.-2.-2.mca
+│   │   │   │   │   ├── r.-2.0.mca
+│   │   │   │   │   ├── r.-2.1.mca
+│   │   │   │   │   ├── r.0.-1.mca
+│   │   │   │   │   ├── r.0.-2.mca
+│   │   │   │   │   ├── r.0.0.mca
+│   │   │   │   │   ├── r.0.1.mca
+│   │   │   │   │   ├── r.1.-1.mca
+│   │   │   │   │   ├── r.1.-2.mca
+│   │   │   │   │   ├── r.1.0.mca
+│   │   │   │   │   └── r.1.1.mca
+│   │   │   │   ├── stats
+│   │   │   │   │   └── c2ff9b6c-05d4-45d9-a38d-7fde916d5453.json
+│   │   │   │   ├── icon.png
+│   │   │   │   ├── level.dat
+│   │   │   │   ├── level.dat_old
+│   │   │   │   └── session.lock
+│   │   │   └── .DS_Store
+│   │   └── .DS_Store
+│   ├── hexadecimal_circuit
+│   │   ├── circuit docs
+│   │   │   ├── karnaugh maps.pdf
+│   │   │   ├── karnaugh maps.tex
+│   │   │   ├── logic circuit.drawio
+│   │   │   ├── logic circuit.jpg
+│   │   │   └── truth table.csv
+│   │   └── .DS_Store
+│   ├── second_attempt_double_display
+│   │   ├── circuit docs
+│   │   │   └── dec old double display ideas.pdf
+│   │   ├── screenshots
+│   │   │   ├── circuit view.png
+│   │   │   ├── encoder view.png
+│   │   │   ├── full view.png
+│   │   │   ├── keypad.png
+│   │   │   ├── test 00.png
+│   │   │   ├── test 42.png
+│   │   │   └── test 99.png
+│   │   ├── video
+│   │   │   └── record test.mp4
+│   │   ├── world
+│   │   │   ├── BitView_00-99_Unoptimized
+│   │   │   │   ├── advancements
+│   │   │   │   │   └── c2ff9b6c-05d4-45d9-a38d-7fde916d5453.json
+│   │   │   │   ├── data
+│   │   │   │   │   ├── chunks.dat
+│   │   │   │   │   ├── Mansion_index.dat
+│   │   │   │   │   ├── Mineshaft_index.dat
+│   │   │   │   │   ├── Monument_index.dat
+│   │   │   │   │   ├── raids.dat
+│   │   │   │   │   ├── random_sequences.dat
+│   │   │   │   │   ├── scoreboard.dat
+│   │   │   │   │   ├── stopwatches.dat
+│   │   │   │   │   ├── Stronghold_index.dat
+│   │   │   │   │   ├── Temple_index.dat
+│   │   │   │   │   ├── Village_index.dat
+│   │   │   │   │   └── world_border.dat
+│   │   │   │   ├── DIM-1
+│   │   │   │   │   └── data
+│   │   │   │   │       ├── chunks.dat
+│   │   │   │   │       ├── raids.dat
+│   │   │   │   │       └── world_border.dat
+│   │   │   │   ├── DIM1
+│   │   │   │   │   └── data
+│   │   │   │   │       ├── chunks.dat
+│   │   │   │   │       ├── raids_end.dat
+│   │   │   │   │       └── world_border.dat
+│   │   │   │   ├── entities
+│   │   │   │   │   ├── r.-1.-1.mca
+│   │   │   │   │   ├── r.-1.-2.mca
+│   │   │   │   │   ├── r.-1.0.mca
+│   │   │   │   │   ├── r.-2.-1.mca
+│   │   │   │   │   ├── r.-2.-2.mca
+│   │   │   │   │   ├── r.-2.0.mca
+│   │   │   │   │   ├── r.0.-1.mca
+│   │   │   │   │   ├── r.0.-2.mca
+│   │   │   │   │   ├── r.0.0.mca
+│   │   │   │   │   ├── r.1.-1.mca
+│   │   │   │   │   ├── r.1.-2.mca
+│   │   │   │   │   └── r.1.0.mca
+│   │   │   │   ├── playerdata
+│   │   │   │   │   ├── c2ff9b6c-05d4-45d9-a38d-7fde916d5453.dat
+│   │   │   │   │   └── c2ff9b6c-05d4-45d9-a38d-7fde916d5453.dat_old
+│   │   │   │   ├── poi
+│   │   │   │   │   ├── r.-1.-1.mca
+│   │   │   │   │   ├── r.-1.-2.mca
+│   │   │   │   │   ├── r.-1.0.mca
+│   │   │   │   │   ├── r.-1.1.mca
+│   │   │   │   │   ├── r.-2.-1.mca
+│   │   │   │   │   ├── r.-2.-2.mca
+│   │   │   │   │   ├── r.-2.0.mca
+│   │   │   │   │   ├── r.-2.1.mca
+│   │   │   │   │   ├── r.0.-1.mca
+│   │   │   │   │   ├── r.0.-2.mca
+│   │   │   │   │   ├── r.0.0.mca
+│   │   │   │   │   ├── r.0.1.mca
+│   │   │   │   │   ├── r.1.-1.mca
+│   │   │   │   │   ├── r.1.-2.mca
+│   │   │   │   │   ├── r.1.0.mca
+│   │   │   │   │   └── r.1.1.mca
+│   │   │   │   ├── region
+│   │   │   │   │   ├── r.-1.-1.mca
+│   │   │   │   │   ├── r.-1.-2.mca
+│   │   │   │   │   ├── r.-1.0.mca
+│   │   │   │   │   ├── r.-1.1.mca
+│   │   │   │   │   ├── r.-2.-1.mca
+│   │   │   │   │   ├── r.-2.-2.mca
+│   │   │   │   │   ├── r.-2.0.mca
+│   │   │   │   │   ├── r.-2.1.mca
+│   │   │   │   │   ├── r.0.-1.mca
+│   │   │   │   │   ├── r.0.-2.mca
+│   │   │   │   │   ├── r.0.0.mca
+│   │   │   │   │   ├── r.0.1.mca
+│   │   │   │   │   ├── r.1.-1.mca
+│   │   │   │   │   ├── r.1.-2.mca
+│   │   │   │   │   ├── r.1.0.mca
+│   │   │   │   │   └── r.1.1.mca
+│   │   │   │   ├── stats
+│   │   │   │   │   └── c2ff9b6c-05d4-45d9-a38d-7fde916d5453.json
+│   │   │   │   ├── icon.png
+│   │   │   │   ├── level.dat
+│   │   │   │   ├── level.dat_old
+│   │   │   │   └── session.lock
+│   │   │   └── .DS_Store
+│   │   └── .DS_Store
+│   ├── .DS_Store
+│   └── README.md
+├── . gitignore
+├── .DS_Store
+├── .gitattributes
+├── .gitignore
+├── ARCHITECTURE.md
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── LICENSE
+├── README.md
+└── tree.txt
+
+57 directories, 255 files
