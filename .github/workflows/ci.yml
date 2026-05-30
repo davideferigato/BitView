@@ -20,7 +20,27 @@ jobs:
             exit 1
           fi
 
-
+      - name: Validate truth table CSV
+        run: |
+          python3 << 'EOF'
+import csv, sys
+path = "00-99_Display/circuit docs/truth table.csv"
+try:
+    with open(path, 'r') as f:
+        reader = csv.reader(f)
+        header = next(reader)
+        rows = list(reader)
+        if len(rows) < 16:
+            print(f"❌ Expected at least 16 data rows, got {len(rows)}")
+            sys.exit(1)
+        if len(header) != 9:
+            print(f"❌ Expected 9 columns, got {len(header)}")
+            sys.exit(1)
+        print(f"✅ CSV valid: {len(rows)} rows, {len(header)} columns")
+except Exception as e:
+    print(f"❌ Error reading CSV: {e}")
+    sys.exit(1)
+EOF
 
       - name: Check AND to OR-NOT.md exists
         run: |
