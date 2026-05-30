@@ -24,6 +24,12 @@ jobs:
         run: |
           ls -la "00-99_Display/circuit docs/"
 
+      - name: Debug list files
+        run: |
+          pwd
+          ls -la "00-99_Display/circuit docs/"
+          cat "00-99_Display/circuit docs/truth table.csv" | head -5
+
       - name: Validate truth table CSV
         run: |
           cat > /tmp/validate_csv.py << 'EOF'
