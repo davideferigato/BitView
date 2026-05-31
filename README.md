@@ -242,9 +242,3 @@ python generate_truth_table.py
 - **Davide Ferigato** – Project design, redstone implementation, documentation.  
 - **Roberto Tittoto** – Collaboration on the first Karnaugh maps (single‑digit unoptimised version).  
 - Thanks to the Minecraft redstone community for inspiration.
-
----
-
-## 📄 License
-
-This project is open source and available under the **MIT License**. See the [LICENSE](./LICENSE) file for details.
