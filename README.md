@@ -102,6 +102,11 @@ The **keypad** consists of two **3×3 lever blocks** (digits 1–9), stacked ver
 
 More screenshots can be found in the [`00-99_Display/screenshots`](./00-99_Display/screenshots) folder.
 
+### Vertical layering (isometric view)
+![Layers view](./00-99_Display/screenshots/layers_view.png)
+*Units circuit at the bottom, tens circuit stacked above. Displays are side‑by‑side.*
+
+
 ---
 
 ## 🎥 Video Demo
