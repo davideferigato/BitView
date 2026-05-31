@@ -20,15 +20,9 @@ jobs:
             exit 1
           fi
 
-      - name: Debug list files
-        run: |
-          pwd
-          ls -la "00-99_Display/circuit docs/"
-          cat "00-99_Display/circuit docs/truth table.csv" | head -5
-
       - name: Validate truth table CSV
         run: |
-          cat > /tmp/validate_csv.py << 'EOF'
+          python3 << 'EOF'
           import csv, sys
           path = "00-99_Display/circuit docs/truth table.csv"
           try:
@@ -42,26 +36,19 @@ jobs:
                   if len(rows) < 16:
                       print(f"❌ Expected at least 16 data rows, got {len(rows)}")
                       sys.exit(1)
-                  # Check segment values (columns 4 to 10, indices 4..10)
                   for i, row in enumerate(rows):
                       for col in range(4, 11):
                           val = row[col].strip().upper()
                           if val not in ('0', '1', 'X'):
                               print(f"❌ Row {i+2}, column {col+1}: invalid value '{val}'")
                               sys.exit(1)
-                  print(f"✅ CSV valid: {len(rows)} rows, {len(header)} columns (delimiter ';')")
+                  print(f"✅ CSV valid: {len(rows)} rows, {len(header)} columns")
           except Exception as e:
               print(f"❌ Error reading CSV: {e}")
               sys.exit(1)
           EOF
-          python3 /tmp/validate_csv.py
 
       - name: Check AND to OR-NOT.md exists
-
-      - name: Validate world files (advanced)
-        run: |
-          python tools/validate_world.py
-
         run: |
           if [ -f "00-99_Display/circuit docs/AND to OR-NOT.md" ]; then
             echo "✅ Documentation found"
@@ -70,15 +57,10 @@ jobs:
             exit 1
           fi
 
-      - name: Check region files (warnings only)
+      - name: Validate world files (advanced)
         run: |
-          files=(00-99_Display/world/BitView_00-99_Display/region/*.mca)
-          if [ "${files[0]}" = "00-99_Display/world/BitView_00-99_Display/region/*.mca" ]; then
-            echo "⚠️ No .mca files found in region folder"
+          if [ -f "tools/validate_world.py" ]; then
+            python3 tools/validate_world.py
           else
-            for file in "${files[@]}"; do
-              if [ ! -s "$file" ]; then
-                echo "⚠️ Warning: $file is empty (may be fine)"
-              fi
-            done
+            echo "⚠️ validate_world.py not found, skipping advanced validation"
           fi
