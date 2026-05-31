@@ -4,6 +4,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Release](https://img.shields.io/badge/Release-v1.0-orange)
 ![Build Status](https://github.com/davideFerigato/BitView/actions/workflows/ci.yml/badge.svg)
+![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue?logo=githubpages)
 
 **BitView** is a fully functional two‑digit decimal display built inside **Minecraft** using pure redstone logic.  
 It demonstrates the practical application of **Boolean algebra**, **Karnaugh maps**, and **logic minimization** on a highly constrained hardware platform (redstone torches and dust).
