@@ -4,6 +4,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Release](https://img.shields.io/badge/Release-v1.0-orange)
 ![Build Status](https://github.com/davideFerigato/BitView/actions/workflows/ci.yml/badge.svg)
+![Build Status](https://github.com/davideFerigato/BitView/actions/workflows/ci.yml/badge.svg?ts=12345)
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
 ![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue?logo=githubpages)
 
