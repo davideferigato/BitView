@@ -4,6 +4,8 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Release](https://img.shields.io/badge/Release-v1.0-orange)
 ![Build Status](https://github.com/davideFerigato/BitView/actions/workflows/ci.yml/badge.svg)
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue?logo=githubpages)
 ![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue?logo=githubpages)
 
 **BitView** is a fully functional two‑digit decimal display built inside **Minecraft** using pure redstone logic.  
@@ -219,6 +221,22 @@ The final version uses the **same vertical layering** as the second attempt but 
 > 📖 Full details and “rough” documentation of the legacy attempts are available in the [`legacy_attempts/`](./legacy_attempts) folder.
 
 ---
+
+
+## 🛠️ Tools (Python scripts)
+
+The `tools/` folder contains utility scripts:
+- `simulate_decoder.py` – simulate the BCD to 7‑segment decoder for any digit 0‑9.
+- `validate_world.py` – advanced validation of Minecraft world files (existence, non‑empty, region files).
+- `generate_truth_table.py` – generate a `;`‑delimited CSV truth table from the minimised expressions (output: `generated_truth_table.csv`).
+
+To run them, ensure Python 3 is installed and execute from the repository root:
+```bash
+cd tools
+python simulate_decoder.py 5
+python validate_world.py
+python generate_truth_table.py
+```
 
 ## 🙏 Credits
 
