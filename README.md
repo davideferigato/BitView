@@ -1,7 +1,7 @@
 # BitView
 
 ![Minecraft Version](https://img.shields.io/badge/Minecraft-Java%20Edition%201.20.4-blue?logo=minecraft)
-![License](https://img.shields.io/badge/License-MIT-green)
+![License: MIT](https://img.shields.io/badge/License-MIT-green)
 ![Release](https://img.shields.io/badge/Release-v1.0-orange)
 ![Build Status](https://github.com/davideFerigato/BitView/actions/workflows/ci.yml/badge.svg)
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
@@ -9,7 +9,9 @@
 [![DOI](https://zenodo.org/badge/1211931868.svg)](https://doi.org/10.5281/zenodo.20709864)
 [![LaTeX](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
 ![GitHub last commit](https://img.shields.io/github/last-commit/davideFerigato/BitView)
-[![Documentation](https://img.shields.io/badge/docs-online-blue.svg)](https://davideferigato.github.io/BitView/)
+![Maintenance](https://img.shields.io/badge/Maintenance-yes-green)
+![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196)
+![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey)
 
 **BitView** is a fully functional two‑digit decimal display built inside **Minecraft** using pure redstone logic.  
 It demonstrates the practical application of **Boolean algebra**, **Karnaugh maps**, and **logic minimization** on a highly constrained hardware platform (redstone torches and dust).
