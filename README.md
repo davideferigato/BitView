@@ -36,7 +36,6 @@ It demonstrates the practical application of **Boolean algebra**, **Karnaugh map
 - [Hexadecimal Extension](#-hexadecimal-extension)
 - [Legacy Attempts vs Final](#-legacy-attempts-vs-final-optimised)
 - [Credits](#-credits)
-- [License](#-license)
 
 ---
 
