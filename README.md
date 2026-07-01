@@ -12,12 +12,12 @@
   <img src="https://img.shields.io/badge/Minecraft-Java%20Edition%201.20.4-blue?logo=minecraft" alt="Minecraft Version">
   <img src="https://img.shields.io/badge/License-MIT-green" alt="License: MIT">
   <img src="https://img.shields.io/badge/Release-v1.0-orange" alt="Release">
-  <img src="https://github.com/davideFerigato/BitView/actions/workflows/ci.yml/badge.svg" alt="Build Status">
+  <img src="https://github.com/davideferigato/BitView/actions/workflows/ci.yml/badge.svg" alt="Build Status">
   <img src="https://img.shields.io/badge/Python-3.x-blue?logo=python" alt="Python">
   <img src="https://img.shields.io/badge/GitHub-Pages-blue?logo=githubpages" alt="GitHub Pages">
   <a href="https://doi.org/10.5281/zenodo.20709864"><img src="https://zenodo.org/badge/1211931868.svg" alt="DOI"></a>
   <img src="https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg" alt="LaTeX">
-  <img src="https://img.shields.io/github/last-commit/davideFerigato/BitView" alt="GitHub last commit">
+  <img src="https://img.shields.io/github/last-commit/davideferigato/BitView" alt="GitHub last commit">
   <img src="https://img.shields.io/badge/Maintenance-yes-green" alt="Maintenance">
   <img src="https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196" alt="Conventional Commits">
   <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey" alt="Platform">

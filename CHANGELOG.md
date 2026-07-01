@@ -22,6 +22,6 @@ All notable changes to the BitView project are documented in this file.
 - Works correctly but inefficient (more gates, longer signal paths).
 - Served as proof of concept and learning base.
 
-[1.0.0]: https://github.com/davideFerigato/BitView/releases/tag/v1.0
-[0.2.0]: https://github.com/davideFerigato/BitView/releases/tag/v0.2
-[0.1.0]: https://github.com/davideFerigato/BitView/releases/tag/v0.1
+[1.0.0]: https://github.com/davideferigato/BitView/releases/tag/v1.0
+[0.2.0]: https://github.com/davideferigato/BitView/releases/tag/v0.2
+[0.1.0]: https://github.com/davideferigato/BitView/releases/tag/v0.1
