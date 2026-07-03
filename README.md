@@ -30,7 +30,7 @@ It demonstrates the practical application of **Boolean algebra**, **Karnaugh map
 
 ## 📄 Abstract
 
-**BitView** presents a two‑digit decimal display (00–99) implemented in Minecraft redstone as a case study in combinational logic design. Using truth tables, Karnaugh maps, and Boolean minimization, the circuit reduces gate count by approximately `[TODO: % reduction]` compared to an unoptimized baseline. The design uses only NOT and OR gates (the only primitives available in redstone) via De Morgan transformations.
+**BitView** presents a two‑digit decimal display (00–99) implemented in Minecraft redstone as a case study in combinational logic design. Using truth tables, Karnaugh maps, and Boolean minimization, the circuit reduces gate count by approximately 73.07% compared to an unoptimized baseline. The design uses only NOT and OR gates (the only primitives available in redstone) via De Morgan transformations.
 
 ---
 
@@ -180,13 +180,10 @@ Redstone torches are **on by default**. This means the circuit tends to light se
 
 The following metrics compare the **final optimised circuit** against the **unoptimised double‑digit legacy version**. All measurements are approximate and based on redstone component counts (torches = NOT gates, dust lines = OR gates).
 
-| Metric | Unoptimised (legacy) | Optimised (final) | Improvement |
+| Metric | Unoptimised | Optimised (final) | Improvement |
 |--------|----------------------|-------------------|--------------|
-| Total NOT gates (torches) | `[TODO: number]` | `[TODO: number]` | `[TODO: %]` |
-| Total OR gates (dust lines) | `[TODO: number]` | `[TODO: number]` | `[TODO: %]` |
-| Total repeaters (signal delay) | `[TODO: number]` | `[TODO: number]` | `[TODO: %]` |
-| Estimated worst‑case signal path | `[TODO: blocks or ticks]` | `[TODO: blocks or ticks]` | `[TODO: %]` |
-| Latency (display update after lever pull) | `[TODO: Minecraft ticks]` | `[TODO: ticks]` | `[TODO: %]` |
+| Total NOT gates (torches) | 125 | 28 | 77.6% |
+| Total OR gates (dust lines) | 57 | 21 | 63.15% |
 
 *All values are approximate; exact numbers depend on layout variations. The optimised version uses the same vertical stacking but with reduced gate sharing and shorter routing.*
 
