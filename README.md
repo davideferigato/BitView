@@ -185,7 +185,8 @@ The following metrics compare the **final optimised circuit** against the **unop
 | Total NOT gates (torches) | 125 | 28 | 77.6% |
 | Total OR gates (dust lines) | 57 | 21 | 63.15% |
 
-*All values are approximate; exact numbers depend on layout variations. The optimised version uses the same vertical stacking but with reduced gate sharing and shorter routing.*
+*The application of established metrics such as logical effort was precluded by the hybrid nature of Minecraft's redstone system, which operates concurrently as a logic circuit in certain aspects and as an electrical circuit in others. Consequently, the "Default-On" phenomenon would have rendered any assessment based on logical effort inherently unfeasible, thereby justifying the exclusion of such methodology from our evaluation framework.*
+
 
 ---
 
